@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header {
+    @apply w-full text-left font-bold text-3xl md:text-5xl top-0 left-0 py-2 px-6 md:px-10;
+}
+
+.card-f {
+    @apply w-full max-w-xs text-right p-8 m-4 bg-green-100 rounded-md;
+}
+.card-f h3 {
+    @apply uppercase font-semibold text-green-300 text-lg md:text-2xl;
+}
+.card-f h2 {
+    @apply capitalize font-bold text-2xl text-green-500 md:text-3xl;
+}
+.card-f h4 {
+    @apply text-green-400 font-semibold my-1;
+}
+
+.card-e {
+    @apply ml-auto w-full max-w-xs text-right pb-4 border-b border-green-100 mb-6;
+}
+.card-e h3 {
+    @apply uppercase font-semibold text-green-300 text-lg md:text-2xl;
+}
+.card-e h2 {
+    @apply capitalize font-bold text-2xl text-green-500 md:text-3xl;
+}
