@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: Merriweather;
+}
+
+.navbar {
+    @apply flex items-center justify-center w-full;
+    height: auto;
+    max-height: 60px;
+    box-shadow: 0px 1px 0px #44444412; 
+}
+.navbar .desktop {
+    @apply justify-evenly;
+    height: 60px;
+    min-width: 50%;
+    align-items: center;
+    max-width: 80%;
+}
+.logo {
+    font-family: Cinzel;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.link {
+    @apply hover:text-gray-400;
+    font-family: Cinzel;
+}
+header .mobile {
+    height: 60px;   
+}
+.mobile .links {
+    @apply absolute bg-gray-50 h-full mt-2;
+    top: 60px;
+    left: 0;
+    min-width: 30%;
+    max-width: 250px;
+    z-index: 999;
+}
+.links li a {
+    @apply p-4 block;
+}
+@layer utilities {
+    @variants responsive {
+        .grid-main {
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+        .g-span-6 {
+            --spanSize: 6;
+        }
+        .g-span-5 {
+            --spanSize: 5;
+        }
+        .g-span-4 {
+            --spanSize: 4;
+        }
+        .g-span-3 {
+            --spanSize: 3;
+        }
+        .g-span-2 {
+            --spanSize: 2;
+        }
+        .g-span-1 {
+            --spanSize: 1;
+        }
+    }
+}
+
+.main-grid {
+    @apply mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-main;
+    --rowSize: 100px;
+    grid-auto-rows: var(--rowSize);
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+}
+.card {
+    @apply flex flex-col 
+        g-span-1 
+        text-sm sm:text-base md:text-lg;
+    grid-row-end: span var(--spanSize);
+    position: relative;
+    height: calc(var(--spanSize) * var(--rowSize));
+}
+.hasImg {
+    @apply g-span-3 md:text-base;
+}
+.card a {
+    @apply w-full m-auto;
+    width: 90%;
+}
+.card a:hover {
+    @apply text-gray-400;
+}
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 70%;
+}
+.card h2 {
+    @apply font-bold m-auto;
+    width: 90%;
+}
+.card a h2 {
+    @apply w-full;
+}
+.card:first-child {
+    @apply text-3xl 
+        col-span-1 g-span-5 sm:col-span-2 md:col-span-3 md:g-span-6;
+}
+.second {
+    @apply text-xl g-span-3 md:g-span-4;
+}

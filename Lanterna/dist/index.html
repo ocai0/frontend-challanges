@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;800&family=Merriweather:wght@300;900&display=swap" rel="stylesheet">
+    <script defer src="../node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+    <script defer src="../node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script defer src="../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+    <title>Lanterna - Trazendo Claridade aos Fatos</title>
+</head>
+<body class="w-screen min-h-screen overflow-x-hidden flex items-center flex-col" onload="loadNews()">
+    <header class="navbar ">
+        <nav class="desktop hidden md:flex">
+            <a class="link mx-3" href="#">Principal</a>
+            <a class="link mx-3" href="#">Internacional</a>
+            <a class="logo mx-4" href="#">Lanterna</a>
+            <a class="link mx-3" href="#">Manchete do Dia</a>
+            <a class="link mx-3" href="#">Cotação Hoje</a>
+        </nav>
+        <nav class="mobile md:hidden w-full flex items-center justify-center mx-5">
+            <button class="mr-auto">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+            <a class="logo text-right ml-auto mr-4" href="#">Lanterna</a>
+            <div class="links hidden flex flex-col w-full md:w-64 text-gray-700 bg-white flex-shrink-0">
+                <ol>
+                    <li><a class="link" href="#">Principal</a></li>
+                    <li><a class="link" href="#">Internacional</a></li>
+                    <li><a class="link" href="#">Manchete do Dia</a></li>
+                    <li><a class="link" href="#">Cotação Hoje</a></li>
+                </ol>
+            </div>
+        </nav>
+    </header>
+    <main class="container main-grid" id="news"></main>
+</body>
+<script src="main.js"></script>
+</html>
