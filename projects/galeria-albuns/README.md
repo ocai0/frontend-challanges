@@ -1,4 +1,5 @@
 # Galeria com Álbuns Musicais Favoritos
+<h2 align="center"><a href="https://ocai0.github.io/frontend-challanges/galeria-albuns/dist/">**Veja Agora**</a></h2>
 Neste desafio, eu devo construír uma galeria que exiba meus álbuns favoritos, todos devem apresentar:
  - Nome do Álbum
  - Capa do Álbum
