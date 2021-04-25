@@ -7,30 +7,30 @@ mobile.querySelector("button").addEventListener("click", (e) => {
 //Load all news
 let allNews = [
     {
-        title: "Mais uma vez o público ataca: A corte e o que eles dizem sobre sua peble no Séc. XXI",
-        img: "https://i.pinimg.com/564x/c4/97/62/c49762c7dcdefea024add7535692a70a.jpg",
+        title: "Misticismo, amor e poder: Descubra como era o mundo anterior a tecnologia nos antigos anos 'Antes de Cristo'",
+        img: "https://64.media.tumblr.com/e77775d389337fbb9c908a6d938ddcd7/04de2fda593855df-cc/s1280x1920/cdc5b65fd4c3085a7d22b1c28e846438050975e5.jpg",
+        link: "article.html"
+    },
+    {
+        title: "'O Balanço', conheça esta e outras obras de Julian Rossi Ashton",
+        img: "https://64.media.tumblr.com/f2c20e0006895e8c3238a0046bbea53b/6ae9e6848b316ea2-f4/s1280x1920/f8707fe0da3a10876c899f600281fea951f93709.jpg",
+        alt: "The Swing, Julian Rossi Ashton",
         link: "#"
     },
     {
-        title: "O grande evento começa: O que esperar do Emmy Awards de 2021?",
-        img: "https://i.pinimg.com/564x/24/b0/3b/24b03b452c1987c41ed6191d0ac67de9.jpg",
-        alt: "Imagem que acompanha",
-        link: "#"
-    },
-    {
-        title: "'Estou a 1 ano esperando mais nada ainda', entenda o sofrimento dessa jovem",
-        img: "https://i.pinimg.com/236x/19/08/a5/1908a52490f830a431f6ebaec36cb20c.jpg",
+        title: "Arquiteturas e construções imortalizadas em diversas pinturas",
+        img: "https://64.media.tumblr.com/5cfcfb42be4e30e70d14e0620c8c3a13/ca66668e53e043f8-b9/s1280x1920/bb1834b96924e7aaf289dc41ebcb830beffbd621.jpg",
         link: "#",
     },
     {
-        title: "Conheça as 5 maiores ilhas do mundo. A 4ª vai te surpreender",
+        title: "Veja as pinturas que possuem duas imagens em uma",
+        img: "https://64.media.tumblr.com/36ed1fbf8ef32df811f0980406d73ad8/39ad38edb95719b1-72/s1280x1920/f7f8ae171c7c83cfe34a4718c1eefa9acf972a03.jpg",
+        link: "#",
+    },
+    {
+        title: "Conheça 5 mitos esquecidos pelo mundo. A 4ª vai te surpreender",
         img: "https://i.pinimg.com/236x/91/c0/e8/91c0e830399412225352ba6caf0efa46.jpg",
         link: "#"
-    },
-    {
-        title: "Descubra agora o que o universo tem guardado para você",
-        img: "https://i.pinimg.com/236x/47/2e/8d/472e8d30da5ba5a9176fefd9b2675212.jpg",
-        link: "#",
     },
     {
         title: "Rencontro emocionante depois de mais de 50 anos",

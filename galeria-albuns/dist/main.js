@@ -1,17 +1,3 @@
-function addEvent() {
-    let a = document.querySelectorAll("section");
-    a.forEach(item => {
-        item.onmouseenter = (event) => {
-            item.querySelector("div").classList.toggle("hidden");
-            item.querySelector("div").classList.toggle("flex");
-        };
-        item.onmouseleave = (event) => {
-            item.querySelector("div").classList.toggle("hidden");
-            item.querySelector("div").classList.toggle("flex");
-        };
-    });
-}
-
 let info = [
     {
         img: "1.jpg",
@@ -52,7 +38,7 @@ let info = [
     {
         img: "7.jpg",
         title: "Chillhop Essentials - Spring 2018",
-        artist: "Chillhop",
+        artist: "Chillhop Records",
         year: "2018"
     },
     {
@@ -75,9 +61,9 @@ let info = [
     },
     {
         img: "11.png",
-        title: "Panic Room",
-        artist: "Au/Ra",
-        year: "2018"
+        title: "NieR Music Concert & Talk Live Soundtrack",
+        artist: "Keiichi Okabe",
+        year: "2017"
     },
     {
         img: "12.jpeg",
@@ -132,10 +118,22 @@ let info = [
 function load() {
     let par = document.querySelector("main");
     info.forEach(item => {
-        let newEl = document.createElement("section");
-        newEl.classList.add("card");
-        newEl.innerHTML = `<img src='img/${item.img}'><div class='hidden'><h2>${item.title}</h2><p>${item.artist}</p><p>${item.year}</p></div>`;
-        par.appendChild(newEl);
+        addAlbum(item, par);
     });
-    addEvent();
+    
+}
+
+function addAlbum(info, parentElement) {
+    let newEl = document.createElement("section");
+    newEl.classList.add("card");
+    newEl.innerHTML = `<img src='img/${info.img}'><div class='hidden'><h2>${info.title}</h2><p>${info.artist}</p><p>${info.year}</p></div>`;
+    parentElement.appendChild(newEl);
+    newEl.onmouseenter = (event) => {
+        newEl.querySelector("div").classList.toggle("hidden");
+        newEl.querySelector("div").classList.toggle("flex");
+    };
+    newEl.onmouseleave = (event) => {
+        newEl.querySelector("div").classList.toggle("hidden");
+        newEl.querySelector("div").classList.toggle("flex");
+    };
 }
