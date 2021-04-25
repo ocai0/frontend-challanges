@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+    @apply col-span-1 row-span-1 bg-green-500 relative flex;
+}
+.card img {
+    @apply rounded;
+}
+.card div {
+    @apply absolute w-full h-full top-0 left-0 flex-col flex-wrap items-center justify-start bg-gray-900 cursor-default;
+}
+.card div h2 {
+    @apply text-gray-50 font-extrabold text-2xl w-full text-center m-auto mb-0;
+}
+.card div p {
+    @apply text-gray-100 font-bold m-auto mt-0;
+}
