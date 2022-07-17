@@ -1,5 +1,5 @@
 # Perfil/ Currículo Pessoal
-<h2 align="center"><a href="https://ocai0.github.io/frontend-challanges/perfil-curriculo/dist/">**Veja Agora**</a></h2>
+<h2 align="center"><a href="https://ocai0.github.io/frontend-challenges/perfil-curriculo/dist/">**Veja Agora**</a></h2>
 Construir uma página que atuasse como uma página pessoal sobre mim, falando sobre minha formação e minhas atividades profissionais até o momento.
 
 Para executar, basta abrir o arquivo **dist/index.html**
