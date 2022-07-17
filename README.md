@@ -5,6 +5,7 @@ You can see here some of my projects with a more focus on the Front End part of 
 - [Favorite Albums Gallery](./projects/galeria-albuns) (Note: It's Currently in Portuguese)
 - [News Site 'Lanterna'](./projects/noticias-lanterna) (Note: It's Currently in Portuguese)
 - [Personal/Curriculum website](./projects/perfil-curriculo) (Note: It's Currently in Portuguese)
+- [Star Wars Poster UI](./projects/star-wars-poster)
 
 
 ## Comming Up
