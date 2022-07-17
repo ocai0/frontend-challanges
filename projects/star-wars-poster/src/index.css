@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: 'Montserrat', sans-serif; font-size: min(1.6vmax, 18px); }
+
+@layer components {
+    .posterContainer {
+        @apply p-4 mx-auto w-full
+            flex flex-wrap items-center justify-center gap-2 
+            translate-y-0 sm:-translate-y-[8vmin];
+    }
+    .posterContainer:hover .poster {
+        @apply opacity-50;
+    }
+    .poster {
+
+        @apply w-[30%] max-h-[55vmin]
+            lg:w-[12.5vmax]
+
+            aspect-poster transition-all duration-300;
+    }
+    .posterContainer .poster:hover {
+        @apply opacity-100 max-h-[60vmin];
+    }
+
+    .perspective-400 {
+        perspective: 400px;
+    }
+
+    .transform-origin-50-100 {
+        transform-origin: 50% 100%;
+    }
+
+}
+.posterContainer .poster:nth-child(odd) * {
+    @apply animate-posterAnimation;
+}
+.posterContainer .poster:nth-child(even) * {
+    @apply animate-posterAnimationReverse;
+}
